@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "todoCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "todos",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "teks",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "complate",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/belajar/belajar1.sol": "TodoList"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/belajar/belajar1.sol": {
+			"keccak256": "0xc503a12ed56e5d22b96506f44d8bf886bea55fe438befcfa13d03591e93c2726",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f20e034d7bb86b403ebc917cc3b683e372f2bf8a423ad90ec2e748f59a633787",
+				"dweb:/ipfs/QmVFZEbYcBmficKTopEP5YkMB9zKeKQjTc92a7Emj1VEu8"
+			]
+		}
+	},
+	"version": 1
+}

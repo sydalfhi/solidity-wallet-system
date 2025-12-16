@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_params",
+						"type": "string"
+					}
+				],
+				"name": "sayText",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/belajar/belajar1.sol": "Belajar1"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/belajar/belajar1.sol": {
+			"keccak256": "0x62aa7751bc79fbaf9c74951e8cd052c1f1a091643d7a8340fb43f545754cc3f8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d66793f5da9375b5689ad1ee9c0d5642a6d24831b65737e75f8a9f05137e7752",
+				"dweb:/ipfs/QmVKkYwUuXUArr2W3a5vYDp3bEjeJaxiqXzYyZMEjPtYwP"
+			]
+		}
+	},
+	"version": 1
+}

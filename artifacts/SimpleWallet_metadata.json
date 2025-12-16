@@ -6,10 +6,15 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
+						"indexed": true,
 						"internalType": "address",
 						"name": "user",
 						"type": "address"
@@ -28,7 +33,32 @@
 				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
 						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
 						"internalType": "address",
 						"name": "user",
 						"type": "address"
@@ -44,6 +74,29 @@
 				"type": "event"
 			},
 			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "deposit",
 				"outputs": [],
@@ -54,11 +107,11 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "user",
 						"type": "address"
 					}
 				],
-				"name": "saldo",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -72,8 +125,26 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
-						"name": "_amount",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
@@ -81,6 +152,10 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -96,7 +171,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/belajar/tes.sol": "SimpleWallet"
+			"contracts/belajar/sc_wallet/wallet.sol": "SimpleWallet"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -110,12 +185,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/belajar/tes.sol": {
-			"keccak256": "0x7ace307d182772c49cd472ef75b154e132bed410bc47c683dcd09e306582aa59",
+		"contracts/belajar/sc_wallet/wallet.sol": {
+			"keccak256": "0x4640d649ad0f3651b3b990648cc1597fdaadd7c45529437dbdfdfb8c279c4e8d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b860806ca4dd9a542fc459d22496438a2002d2a76512fbbe35a8ccf9243cb903",
-				"dweb:/ipfs/QmPHtfKU3XgQAYkNjMXwMaGZyTstYG3j2qXDFCGHRMze4U"
+				"bzz-raw://c51c74f5d2063bb2f7bdd198d100b2fac7b5f1a72e5948f795d9f9c176bef197",
+				"dweb:/ipfs/QmNdvymq8u4V31EpanhEEk3PxPoCKmJTvGCDtWbkzRMbyv"
 			]
 		}
 	},

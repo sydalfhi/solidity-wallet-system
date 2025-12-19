@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getAngka",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_angka",
+						"type": "uint256"
+					}
+				],
+				"name": "setAngka",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/belajar/interface/contractB.sol": "IContractA"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/belajar/interface/contractB.sol": {
+			"keccak256": "0x892c92f690a0c9af9a9aa2a2f054c49c457b3d1f53880f5c9f96d963e3261785",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://80e28864fc0803c105b5f2c5b3d6e779b0b6c066a838b7f015c9f328fad87539",
+				"dweb:/ipfs/QmWsxp7FHe8rWm2Gh3tMPCtPAcmxe3aEHRjJgyi7mLMDtV"
+			]
+		}
+	},
+	"version": 1
+}
